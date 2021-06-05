@@ -6,7 +6,7 @@
 	<Nav />
 </div>
 
-<style>
+<style lang="scss">
 	.header {
 	}
 </style>

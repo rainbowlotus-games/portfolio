@@ -18,7 +18,7 @@
 	</div>
 </section>
 
-<style>
+<style lang="scss">
 	section {
 		height: 100%;
 		display: flex;

@@ -1,5 +1,6 @@
 <script>
 	import VeganburgerMenu from './veganburgerMenu.svelte';
+	import Logo from './logo.svelte';
 
 	let links = [
 		{ title: 'Home', route: '/' },
@@ -11,8 +12,7 @@
 <div class="nav container">
 	<div class="content-sidebar">
 		<div class="logo">
-			<img src="/img/smile.png" alt="Sketch of smiling face" />
-			<span>pge</span>
+			<Logo />
 		</div>
 
 		<VeganburgerMenu />
@@ -27,7 +27,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	.nav {
 		font-family: var(--ff-accent-alt);
 		padding: 1em 0 1em 0;
@@ -55,15 +55,7 @@
 		display: flex;
 		flex-flow: row;
 	}
-	.logo img {
-		display: inline-block;
-		height: 100%;
-	}
-	.logo span {
-		display: inline-block;
-		height: 100%;
-		vertical-align: middle;
-	}
+
 	.links {
 		display: none;
 	}

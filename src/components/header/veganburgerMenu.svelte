@@ -6,7 +6,7 @@
 	</svg>
 </div>
 
-<style>
+<style lang="scss">
 	div {
 		height: 2rem;
 	}

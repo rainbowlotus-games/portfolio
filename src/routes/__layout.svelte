@@ -17,7 +17,7 @@
 	</footer>
 </div>
 
-<style>
+<style lang="scss">
 	.fullheight {
 		display: flex;
 		flex-flow: column;
@@ -33,6 +33,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-grow: 1;
 	}
 
 	.fullheight header,
