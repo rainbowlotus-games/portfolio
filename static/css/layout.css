@@ -1,0 +1,33 @@
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.container--narrow {
+    max-width: 40rem;
+}
+
+.content-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.split {
+    display: flex;
+    flex-flow: column;
+}
+
+/* Add complexity */
+@media (min-width: 45em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+}
