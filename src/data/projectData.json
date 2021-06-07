@@ -1,0 +1,20 @@
+[
+    {
+        "id": 0,
+        "name": "Website One",
+        "description": "Where website and one meet",
+        "images": [
+            {"src": "img/project0-1.jpg"},
+            {"src": "img/project0-2.jpg"}
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Website Two",
+        "description": "Where website and two meet",
+        "images": [
+            {"src": "img/project1-1.jpg"},
+            {"src": "img/project1-2.jpg"}
+        ]
+    }
+]
