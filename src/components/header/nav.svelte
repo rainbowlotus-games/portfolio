@@ -35,7 +35,7 @@
 
 	.nav ol {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 	.nav ol li {
@@ -64,7 +64,7 @@
 	}
 
 	/* Add complexity */
-	@media (min-width: 45em) {
+	@media (min-width: 50em) {
 		.links {
 			flex: 1 1 70%;
 			min-width: 20ch;
