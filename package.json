@@ -21,7 +21,8 @@
     "rollup-plugin-svelte": "^7.1.0",
     "sass": "^1.34.1",
     "svelte": "^3.38.2",
-    "svelte-preprocess": "^4.7.3"
+    "svelte-preprocess": "^4.7.3",
+    "@sveltejs/adapter-vercel": "next"
   },
   "type": "module"
 }
