@@ -17,27 +17,66 @@
 	</footer>
 </div>
 
-<style lang="scss">
-	.fullheight {
-		display: flex;
-		flex-flow: column;
-		justify-content: space-between;
-		height: 100vh;
+<style lang="scss" global>
+	:root {
+		--col-primary-200: rgb(48, 107, 216);
+		--col-primary-300: #f8c51c;
+
+		--col-accent-400: rgb(13, 133, 133);
+		--col-accent-600: rgb(2, 42, 61);
+
+		--col-neutral-100: #eee;
+		--col-neutral-900: #111;
+
+		--ff-primary: 'Glegoo', serif;
+		--ff-accent: 'Roboto Slab', serif;
+		--ff-accent-alt: 'Lato', sans-serif;
 	}
 
-	.fullheight header {
-		height: min-content;
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
 	}
 
-	.fullheight main {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-grow: 1;
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	ol,
+	ul {
+		margin: 0;
+		padding: 0;
+		font-weight: normal;
 	}
 
-	.fullheight header,
-	.fullheight footer {
-		line-height: normal;
+	body {
+		font-family: var(--ff-primary);
+		font-weight: 400;
+		font-size: 1.3125em;
+		line-height: 1.6;
+
+		color: var(--col-neutral-100);
+		background-color: var(--col-primary-200);
+	}
+
+	ol,
+	ul {
+		list-style: none;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
 	}
 </style>

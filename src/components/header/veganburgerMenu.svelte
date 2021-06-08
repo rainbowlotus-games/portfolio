@@ -18,7 +18,7 @@
 	}
 
 	/* Add complexity */
-	@media (min-width: 45em) {
+	@media (min-width: 50em) {
 		.mobile-menu-icon {
 			display: none;
 		}

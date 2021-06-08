@@ -1,3 +1,26 @@
+.fullheight {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.fullheight header {
+    height: min-content;
+}
+
+.fullheight main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.fullheight header,
+.fullheight footer {
+    line-height: normal;
+}
+
 .container {
     margin-inline: auto;
     width: min(90%, 70.5rem);

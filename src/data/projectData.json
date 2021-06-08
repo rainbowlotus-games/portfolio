@@ -4,8 +4,18 @@
         "name": "Website One",
         "description": "Where website and one meet",
         "images": [
-            {"src": "img/project0-1.jpg"},
-            {"src": "img/project0-2.jpg"}
+            {
+                "src": "project0-1",
+                "tooltip": "Cool text about this different layout",
+                "description": "This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project. This is a longer description, some in-depth text about this part of the design or project.",
+                "link": "https://www.google.com"
+            },
+            {
+                "src": "project0-2",
+                "tooltip": "Even cooler text about this different layout",
+                "description": "This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project. This is a longer description, some in-depth text about this part of the design or project.",
+                "link": "https://www.google.com"
+            }
         ]
     },
     {
@@ -13,8 +23,18 @@
         "name": "Website Two",
         "description": "Where website and two meet",
         "images": [
-            {"src": "img/project1-1.jpg"},
-            {"src": "img/project1-2.jpg"}
+            {
+                "src": "project1-1",
+                "tooltip": "Some text about this layout",
+                "description": "This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project. This is a longer description, some in-depth text about this part of the design or project.",
+                "link": "https://www.google.com"
+            },
+            {
+                "src": "project1-2",
+                "tooltip": "Some text about this different layout",
+                "description": "This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project.This is a longer description, some in-depth text about this part of the design or project. This is a longer description, some in-depth text about this part of the design or project.",
+                "link": "https://www.google.com"
+            }
         ]
     }
 ]
