@@ -112,8 +112,8 @@
 	:global(.load-circle__fill) {
 		width: 100%;
 		height: 100%;
-		background-color: var(--col-primary-300);
-		color: var(--col-neutral-900);
+		background-color: $col-primary-300;
+		color: $col-neutral-900;
 		border-radius: 0;
 	}
 	:global(.load-text__hidden) {

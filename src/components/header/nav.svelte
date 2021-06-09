@@ -29,7 +29,7 @@
 
 <style lang="scss">
 	.nav {
-		font-family: var(--ff-accent-alt);
+		font-family: $ff-accent-alt;
 		padding: 1em 0 1em 0;
 	}
 
@@ -40,11 +40,11 @@
 
 	.nav ol li {
 		display: block;
-		border-bottom: 4px solid var(--col-primary-300);
+		border-bottom: 4px solid $col-primary-300;
 	}
 
 	.nav a {
-		color: var(--col-accent-300);
+		color: $col-accent-400;
 		text-decoration: none;
 	}
 

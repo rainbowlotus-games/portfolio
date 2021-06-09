@@ -12,7 +12,7 @@
 	}
 
 	div svg {
-		fill: var(--col-primary-300);
+		fill: $col-primary-300;
 		display: inline-block;
 		height: 100%;
 	}

@@ -21,6 +21,10 @@
     line-height: normal;
 }
 
+.fullheight header {
+    margin-top: 1rem;
+}
+
 .container {
     margin-inline: auto;
     width: min(85%, 75rem);

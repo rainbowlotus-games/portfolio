@@ -18,21 +18,6 @@
 </div>
 
 <style lang="scss" global>
-	:root {
-		--col-primary-200: rgb(48, 107, 216);
-		--col-primary-300: #f8c51c;
-
-		--col-accent-400: rgb(13, 133, 133);
-		--col-accent-600: rgb(2, 42, 61);
-
-		--col-neutral-100: #eee;
-		--col-neutral-900: #111;
-
-		--ff-primary: 'Glegoo', serif;
-		--ff-accent: 'Roboto Slab', serif;
-		--ff-accent-alt: 'Lato', sans-serif;
-	}
-
 	*,
 	*::before,
 	*::after {
@@ -55,13 +40,13 @@
 	}
 
 	body {
-		font-family: var(--ff-primary);
+		font-family: $ff-accent;
 		font-weight: 400;
 		font-size: 1.3125em;
 		line-height: 1.6;
 
-		color: var(--col-neutral-100);
-		background-color: var(--col-primary-200);
+		color: $col-neutral-900;
+		background-color: $col-primary-200;
 	}
 
 	ol,

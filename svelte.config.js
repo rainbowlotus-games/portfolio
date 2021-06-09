@@ -5,6 +5,7 @@ import vercel from '@sveltejs/adapter-vercel';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: sveltePreprocess({
+		scss: { includePaths: ['src/scss'], prependData: '@import "vars";'},
 		postcss: {
 			plugins: autoprefixer
 		}
