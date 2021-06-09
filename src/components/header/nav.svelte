@@ -40,7 +40,7 @@
 
 	.nav ol li {
 		display: block;
-		border-bottom: 4px solid $col-primary-300;
+		border-bottom: 4px solid $col-accent-300;
 	}
 
 	.nav a {

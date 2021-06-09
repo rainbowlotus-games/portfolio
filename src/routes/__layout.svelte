@@ -45,8 +45,8 @@
 		font-size: 1.3125em;
 		line-height: 1.6;
 
-		color: $col-neutral-900;
-		background-color: $col-primary-200;
+		color: $col-secondary-800;
+		background-color: $col-primary-100;
 	}
 
 	ol,

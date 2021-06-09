@@ -1,6 +1,10 @@
 <script>
 	import projects from '../data/projectData.json';
 
+	function getProjectImageSrc(image) {
+		return `img/${image.src}.png`;
+	}
+
 	function animateRedirect(image, delay) {
 		let imageOverlay = document.getElementById(image.src);
 
@@ -38,31 +42,40 @@
 		<h1>PROJECTS</h1>
 		{#each projects as project}
 			<div class="project">
-				<h2>{project.name}</h2>
-				<p>{project.description}</p>
+				<div class="project-header">
+					<h2>{project.name}</h2>
+					<p>{project.description}</p>
+				</div>
 				<div class="project-content">
 					{#each project.images as image}
-						<div class="project-image__container">
-							<div id={image.src} class="project-image project-image__overlay">
-								<a
-									on:click|preventDefault={() => animateRedirect(image, 500)}
-									href={image.link}
-									class="project-image__link"
-									data-tooltip={image.tooltip}
-								>
-									<img src={'img/' + image.src + '.png'} alt="Empty" />
-								</a>
-								<div class="mobile-only__blurb">{image.tooltip}</div>
-								<div class="load-circleContainer__hidden">
-									<div class="load-circle__hidden">
-										<span class="load-text__hidden" />
+						{#if image.primary}
+							<div class="project-image__primary">
+								<img src={getProjectImageSrc(image)} alt="" />
+								<div class="shadow" />
+							</div>
+						{:else}
+							<div class="project-image__container">
+								<div id={image.src} class="project-image project-image__overlay">
+									<a
+										on:click|preventDefault={() => animateRedirect(image, 500)}
+										href={image.link}
+										class="project-image__link"
+										data-tooltip={image.tooltip}
+									>
+										<img src={getProjectImageSrc(image)} alt="Empty" />
+									</a>
+									<div class="tooltip-short">{image.tooltip}</div>
+									<div class="load-circleContainer__hidden">
+										<div class="load-circle__hidden">
+											<span class="load-text__hidden" />
+										</div>
 									</div>
 								</div>
+								<p class="project-image__description">
+									{image.description}
+								</p>
 							</div>
-							<p class="project-image__description">
-								{image.description}
-							</p>
-						</div>
+						{/if}
 					{/each}
 				</div>
 			</div>
@@ -132,11 +145,33 @@
 		display: flex;
 		flex-flow: column;
 	}
+	.project-header {
+		text-align: center;
+	}
 	.project-content {
 		display: flex;
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 		gap: 0.5em;
+
+		.project-image__primary {
+			position: relative;
+			width: 100%;
+
+			.shadow {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				box-shadow: inset 1px 1px 10px 0 $col-primary-300;
+				top: 0;
+				left: 0;
+			}
+
+			img {
+				min-height: 100%;
+				width: 100%;
+			}
+		}
 	}
 	.project-image__container {
 		display: flex;
@@ -190,7 +225,7 @@
 			}
 		}
 
-		.mobile-only__blurb {
+		.tooltip-short {
 			display: block;
 			position: absolute;
 			bottom: 0;
@@ -200,7 +235,7 @@
 			color: rgb(250, 250, 250);
 			text-align: center;
 			z-index: 1;
-			background-color: rgba($color: #0a0a0a, $alpha: 0.8);
+			background-color: $col-accent-300;
 		}
 	}
 
@@ -214,7 +249,7 @@
 
 	@media (min-width: 75em) {
 		.project-image__overlay {
-			.mobile-only__blurb {
+			.tooltip-short {
 				display: none;
 			}
 		}
@@ -236,6 +271,12 @@
 		}
 		.project-content {
 			padding-top: 1rem;
+
+			.project-image__primary {
+				img {
+					object-fit: cover;
+				}
+			}
 		}
 
 		.project {

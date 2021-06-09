@@ -1,5 +1,5 @@
 <div class="logo">
-	<img src="/img/nerd.png" />
+	<img src="/img/nerd.png" alt="Drawing of smiley with glasses" />
 	<!-- THE ACTUAL SOURCE OF THE NERV.SVG FILE-->
 	<div class="name">pge</div>
 </div>
