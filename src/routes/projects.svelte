@@ -273,6 +273,8 @@
 			padding-top: 1rem;
 
 			.project-image__primary {
+				height: 60vh;
+
 				img {
 					object-fit: cover;
 				}
