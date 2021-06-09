@@ -44,7 +44,7 @@
 	}
 
 	.nav a {
-		color: $col-accent-400;
+		color: $col-neutral-900;
 		text-decoration: none;
 	}
 
